@@ -1,0 +1,11 @@
+CSS gradient generator
+https://cssgradient.io/
+
+Animation timing function
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-timing-function2
+
+WOW
+https://wowjs.uk/
+
+Animate.css
+https://animate.style/

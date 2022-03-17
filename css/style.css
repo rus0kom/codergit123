@@ -93,6 +93,11 @@ footer h4 {
 	grid-area: main;
 }
 
+.centro2 img{
+	width: 100px;
+	max-height: 200px;
+}
+
 #aside{
 	grid-area: aside;
 }
@@ -251,6 +256,10 @@ footer h4 {
 	align-items: center;
 }
 
+/* animaciones */
+
+
+
 
 /* media queries */
 
@@ -261,6 +270,10 @@ footer h4 {
 	}
 	.carrusel ul {
 		max-width: 280px;
+	}
+	.centro2 img{
+		width: 100px;
+		max-height: 200px;
 	}
 }
 
@@ -304,6 +317,10 @@ footer h4 {
 	.carruselMenu img:hover {
 		border: none;
 	}
+	.centro2 img{
+	width: 100px;
+	max-height: 200px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -318,7 +335,10 @@ footer h4 {
 		width: 350px;
 	}
 	.contenedor{
-		
+	}
+	.centro2 img{
+		width: 200px;
+		max-height: 300px;
 	}
 }
 
@@ -339,6 +359,10 @@ footer h4 {
 	grid-template-areas: "head head head" "main main main" "aside aside aside" "footer footer footer";
 	grid-column-gap: 5px;
 	}
+	.centro2 img{
+	width: 250px;
+	max-height: 400px;
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -352,6 +376,10 @@ footer h4 {
 	.botonera img {
 		width: 550px;
 	}
+	.centro2 img{
+	width: 250px;
+	max-height: 400px;
+}
 }
 
 @media screen and (min-width: 1280px) {
@@ -365,4 +393,8 @@ footer h4 {
 	.botonera img {
 		width: 600px;
 	}
+	.centro2 img{
+	width: 400px;
+	max-height: 500px;
+}
 }

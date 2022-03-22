@@ -4,88 +4,160 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Boleteria - Cine Victoria</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	 <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- MI CSS --> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+  	<script type="../js/wow.min.js"></script>
+  	<script>
+  		new WOW().init();
+  	</script>
 </head>
-<body class="contenedor">
-		<header class="encabezado" id="botonera">
-			<!-- inicia nav -->
-			<nav>
-				<ul class="botonera" style="height: 50px;">
-					<li><a href="../index.html"><img src="../assets/img/logo.png" alt="logo cine victoria"></a></li>
-					<li><a href="cartelera.html">Cartelera</a></li>
-					<li><a href="futurosestrenos.html">Futuros Estrenos</a></li>
-					<li><a href="boleteria.html">Boleteria</a></li>
-					<li><a href="preciopromo.html">Promociones</a></li>
-					<li><a href="#contacto">Contacto</a></li>
-					<li><a href="cuenta">Mi cuenta</a></li>
-				</ul>
-			</nav>
-			<!-- termina nav -->
-		</header>
-	<!-- inicia contenido principal -->
-	<main class="textCenter" id="centro">
-		<h1 class="textCenter">Boleteria</h1>
-	<img src="../assets/img/boleteria.jpg" alt="boleteria" class="text">
-		<section class="nosotrosArticulos">
-			<div>
-				<form action="envio.php" method="post">
-					<fieldset>
-						<legend>Qué película vas a ver?</legend>
-						<label for="pelicula">Nombre de la película</label>
-						<input type="text" placeholder="Vertigo" name="pelicula" id="pelicula">
-						<br>
-						<label for="dia">Día</label>
-						<input type="text" name="dia" id="dia">
-						<br>
-						<label for="asiento">Butaca</label>
-						<input type="text" name="butaca" id="butaca">
-					</fieldset>
-					<fieldset>
-						<legend>Info del pedido</legend>
-						<label for="entrada">Entrada estreno</label>
-						<input type="checkbox" value="entradaestreno" id="entradaestreno">
-						<br>
-						<label for="entrada">Entrada futuro estreno</label>
-						<input type="checkbox" value="entradafuturoestreno" id="entradafuturoestreno">
-					</fieldset>
-					<fieldset>
-						<legend>Entrega de entrada</legend>
-						<label for="domicilio">Envío a domicilio</label>
-						<input type="radio" name="envio" id="domicilio" value="domicilio" id="domicilio">
-						<br>
-						<label for="local">Retiro por local</label>
-						<input type="radio" name="retiro" id="local" value="local" id="local">
-						<br>
-						<select name="localidad" id="localidad">
-							<option value="berisso">Berisso</option>
-							<option value="laplata">La Plata</option>
-							<option value="ensenada">Ensenada</option>
-							<input type="submit" value="Enviar">
-							<input type="reset" value="Cancelar">
-						</select>
-					</fieldset>
-				</form>
-				<!-- termina form -->
+<body>
+<!-- inicia nav -->
+  <nav class="navbar navbar-expand-md backNav" id="botonera">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../assets/img/logo.png" alt="logo cine" class="w-50"> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../views/cartelera.html">Cartelera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/futurosestrenos.html">Futuros Estrenos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mas opciones
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../views/boleteria.html">Boleteria</a></li>
+            <li><a class="dropdown-item" href="../views/preciopromo.html">Promociones</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+</nav>
+<!-- termina nav -->
+<!-- inicia contenido principal -->
+<main class="row">
+	<h1 class="text-primary text-center">Boleteria</h1>
+		<section class="col-xl-6">
+			<div class="text-center">
+				<img src="../assets/img/boleteria.jpg" alt="boleteria" class="img-thumbnail">
 			</div>
 		</section>
-	</main>
-	<!-- cierra main -->
-	<footer class="textCenter" id="pie"> 
-		<article class="backFooter">
-		<h4>Seguinos en nuestras redes</h4> 
-		<a href="https://goo.gl/maps/EYf2qaEZzpHySpb16" target="_blank">
-			<img src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
-		</a>
-		<a href="https://facebook.com" target="_blank">
-			<img src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
-		</a>
-		<a href="https://twitter.com" target="_blank">
-			<img src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
-		</a>
-		<a href="https://instagram.com" target="_blank">
-			<img src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
-		</a>
-		</article>
-	</footer>
+
+<!-- inicia formulario -->
+<section class="col-xl-6">
+<form class="row g-3" id="formulario">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="correo@correo.com">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Dirección</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle Piso 123">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Nombre de la película</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Vertigo, The House That Jack Built, o Tenet">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Butaca</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Ciudad</label>
+    <select id="inputState" class="form-select">
+    <option selected>Elegir...</option>
+    <option value="berisso">Berisso</option>
+	<option value="laplata">La Plata</option>
+	<option value="ensenada">Ensenada</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Día de la función</label>
+    <input type="text" class="form-control" id="inputZip" placeholder="Martes, Miercoles, Jueves">
+  </div>
+   <legend class="col-form-label col-sm-2 pt-0">Opciones</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Envio a domicilio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+         Retiro por local
+        </label>
+      </div>
+    </div>
+    <legend class="col-form-label col-sm-2 pt-0">Opciones</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Entrada estreno
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+         Entrada futuro estreno
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Confirmar</button>
+</form>
+</form>
+</section>
+</main>
+<!-- cierra main -->
+<!-- termina formulario -->
+
+	<!-- footer-->
+<footer class="text-center py3">
+  <article class="backFooter">
+    <h4 class="text-uppercase">Seguinos en nuestras redes</h4> 
+    <a href="https://goo.gl/maps/EYf2qaEZzpHySpb16" target="_blank">
+      <img class="transform" src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
+    </a>
+    <a href="https://facebook.com" target="_blank">
+      <img class="transform" src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
+    </a>
+    <a href="https://twitter.com" target="_blank">
+      <img class="transform" src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img class="transform" src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
+    </a>
+    </article>
+</footer>
+<!-- cierra footer-->
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.min.js"></script>
+
+
 </body>
 </html>

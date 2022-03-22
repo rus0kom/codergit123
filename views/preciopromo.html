@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Promociones - Cine Victoria</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	 <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+  	<script type="js/wow.min.js"></script>
+  	<script>
+  		new WOW().init();
+  	</script>
 </head>
 <body class="contenedor">
 		<header class="encabezado" id="botonera">
@@ -28,7 +30,7 @@
 		</header>
 <!-- inicia contenido principal -->
 <main id="centro">
-			<h1 class="textCenter animate__bounce">Cine Teatro Victoria</h1>
+			<h1 class="textCenter">Cine Teatro Victoria</h1>
 			<div class="carrusel"> 
 				<ul class="carruselFotos">
 					<li id="foto1"><img src="../assets/img/pelicula1.jpg" alt="Vertigo"></li>
@@ -50,7 +52,7 @@
 	</main>
 	<!-- cierra main -->
 <aside class="textCenter" id="aside">
-			<table class="nosotrosArticulos">
+			<table class="nosotrosArticulos linear-gradient">
 				<tr>
 					<th class="textoResaltar">Promos</th> 
 					<th class="textoResaltar">Dia</th>
@@ -71,26 +73,26 @@
 					<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quisquam saepe aspernatur nam at ipsum perspiciatis, debitis voluptates voluptate exercitationem nesciunt cum autem excepturi ipsa alias et tempore quam! Mollitia.</td>
 					<td>$x</td>
 				</tr>
-				<p class="textoResaltar">No te pierdas las promos para disfrutar de tus películas favoritas</p>
+				<p class="textoResaltar wow fadeInLeft" data-wow-iteration="10">No te pierdas las promos para disfrutar de tus películas favoritas</p>
 			</table>
 			<a href="./boleteria.html">
-				<p class="textoResaltar animate__shakeX">Clickea aquí o en la imágen de una película para ser redirigido hacia la boletería y reservá tu entrada</p>			
+				<p class="textoResaltar transform">Clickea aquí o en la imágen de una película para ser redirigido hacia la boletería y reservá tu entrada</p>			
 				</a>
 </aside>
 	<footer class="textCenter" id="pie"> 
 		<article class="backFooter">
 		<h4>Seguinos en nuestras redes</h4> 
 		<a href="https://goo.gl/maps/EYf2qaEZzpHySpb16" target="_blank">
-			<img src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
+			<img class="transform2" src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
 		</a>
 		<a href="https://facebook.com" target="_blank">
-			<img src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
+			<img class="transform2" src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
 		</a>
 		<a href="https://twitter.com" target="_blank">
-			<img src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
+			<img class="transform2" src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
 		</a>
 		<a href="https://instagram.com" target="_blank">
-			<img src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
+			<img class="transform2" src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
 		</a>
 		</article>
 	</footer>

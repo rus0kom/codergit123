@@ -1,4 +1,4 @@
 link pages
-https://github.com/rus0kom/codergit123/settings/pages
+https://rus0kom.github.io/codergit123/
 link repo
 https://github.com/rus0kom/codergit123.git

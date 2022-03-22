@@ -34,7 +34,7 @@ article p{
 
 /* boleteria cuadro */
 
-main section div {
+aside div {
 	color: #22308F;
 	font-weight: 300;
 	font-size: 2rem;
@@ -44,7 +44,7 @@ main section div {
 
 /* tabla cartelera */
 
-main section table {
+aside table {
 	color: #22308F;
 	font-weight: 300;
 	font-size: 2rem;
@@ -140,6 +140,7 @@ footer h4 {
 	padding: 20px 10px;
 	overflow-y: scroll;
 	max-height: 250px;
+
 }
 /* back del footer */
 
@@ -245,6 +246,8 @@ footer h4 {
 
 .botonera img{
 	width: 250px;
+	animation-name: shake;
+	animation-duration: 10s;
 }
 
 /* posicion de los elementos */
@@ -258,7 +261,54 @@ footer h4 {
 
 /* animaciones */
 
+@keyframes shake {
+	0%, 100% {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
 
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translateX(-10px);
+		-ms-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translateX(10px);
+		-ms-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+.linear-gradient{
+	background: rgb(135,147,244);
+	background: linear-gradient(90deg, rgba(135,147,244,1) 0%, rgba(178,183,227,1) 28%, rgba(212,232,235,1) 62%, rgba(135,147,244,1) 83%, rgba(135,147,244,1) 100%);
+}
+
+.transform:hover{
+	transform: translate(10px, 10px);
+	cursor: pointer;
+}
+
+.transform2:hover{
+	transform: translate(-5px, -5px);
+	cursor: pointer;
+}
+
+.botonera li a{
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+}
+
+.botonera li a:hover{
+	color: black;
+	font-weight: 600;
+	background-size: 100% 2px;
+}
 
 
 /* media queries */

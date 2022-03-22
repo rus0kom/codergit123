@@ -4,44 +4,70 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cartelera - Cine Victoria</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- MI CSS --> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   	<link rel="stylesheet" type="text/css" href="../css/animate.css">
-  	<script type="js/wow.min.js"></script>
+  	<script type="../js/wow.min.js"></script>
   	<script>
   		new WOW().init();
   	</script>
 </head>
-<body class="contenedor">
-		<header class="encabezado" id="botonera">
-			<!-- inicia nav -->
-			<nav>
-				<ul class="botonera" style="height: 50px;">
-					<li><a href="../index.html"><img src="../assets/img/logo.png" alt="logo cine victoria"></a></li>
-					<li><a href="cartelera.html">Cartelera</a></li>
-					<li><a href="futurosestrenos.html">Futuros Estrenos</a></li>
-					<li><a href="boleteria.html">Boleteria</a></li>
-					<li><a href="preciopromo.html">Promociones</a></li>
-					<li><a href="#contacto">Contacto</a></li>
-					<li><a href="cuenta">Mi cuenta</a></li>
-				</ul>
-			</nav>
-			<!-- termina nav -->
-		</header>
-	<!-- inicia contenido principal -->
-<main class="textCenter" id="centro">
-		<h1 class="textCenter">Estrenos</h1>
-		<div class="centro2">
+<body>
+<!-- inicia nav -->
+  <nav class="navbar navbar-expand-md backNav" id="botonera">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../assets/img/logo.png" alt="logo cine" class="w-50"> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../views/cartelera.html">Cartelera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/futurosestrenos.html">Futuros Estrenos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mas opciones
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../views/boleteria.html">Boleteria</a></li>
+            <li><a class="dropdown-item" href="../views/preciopromo.html">Promociones</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+</nav>
+<!-- termina nav -->
+<!-- inicia contenido principal -->
+<main class="text-center">
+	<section class="row" id="cartelera">
+		<h1 class="text-primary text-center">Estrenos</h1>
+		<div>
 		<a href="./boleteria.html">
-	<img src="../assets/img/pelicula1.jpg" alt="Vertigo" height="500px" width="500px" border="3px">
-	<img src="../assets/img/pelicula2.jpg" alt="Fight Club" height="500px" width="500px" border="3px">
-	<img src="../assets/img/pelicula3.jpg" alt="Forgotten" height="500px" width="500px" border="3px">
+	<img src="../assets/img/pelicula1.jpg" alt="Vertigo"  border="3px">
+	<img src="../assets/img/pelicula2.jpg" alt="Fight Club" border="3px">
+	<img src="../assets/img/pelicula3.jpg" alt="Forgotten" border="3px">
 		</a>
 		</div>
+	</section>
 </main>
 <!-- cierra main -->
-<aside class="textCenter" id="aside">
-			<table class="nosotrosArticulos linear-gradient">
+<!-- tabla -->
+<aside class="yp3">
+			<table class="table table-hover linear-gradient">
 				<tr>
 					<th class="textoResaltar">Pelicula</th>
 					<th class="textoResaltar">Dia</th>
@@ -64,25 +90,31 @@
 				</tr>
 				</table>
 				<a href="./boleteria.html">
-				<p class="textoResaltar transform">Clickea aquí o en la imágen de una película para ser redirigido hacia la boletería y reservá tu entrada</p>			
+				<h4 class="text-primary text-center transform">Clickea aquí o en la imágen de una película para ser redirigido hacia la boletería y reservá tu entrada</h4>			
 				</a>
-</aside>
-		<footer class="textCenter" id="pie"> 
-		<article class="backFooter">
-		<h4>Seguinos en nuestras redes</h4> 
-		<a href="https://goo.gl/maps/EYf2qaEZzpHySpb16" target="_blank">
-			<img class="transform2" src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
-		</a>
-		<a href="https://facebook.com" target="_blank">
-			<img class="transform2" src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
-		</a>
-		<a href="https://twitter.com" target="_blank">
-			<img class="transform2" src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
-		</a>
-		<a href="https://instagram.com" target="_blank">
-			<img class="transform2" src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
-		</a>
-		</article>
-	</footer>
+<!-- cierra tabla-->
+	<!-- footer-->
+<footer class="text-center py3">
+  <article class="backFooter">
+    <h4 class="text-uppercase">Seguinos en nuestras redes</h4> 
+    <a href="https://goo.gl/maps/EYf2qaEZzpHySpb16" target="_blank">
+      <img class="transform" src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
+    </a>
+    <a href="https://facebook.com" target="_blank">
+      <img class="transform" src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
+    </a>
+    <a href="https://twitter.com" target="_blank">
+      <img class="transform" src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img class="transform" src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
+    </a>
+    </article>
+</footer>
+<!-- cierra footer-->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

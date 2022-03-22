@@ -4,55 +4,92 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Promociones - Cine Victoria</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- MI CSS --> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   	<link rel="stylesheet" type="text/css" href="../css/animate.css">
-  	<script type="js/wow.min.js"></script>
+  	<script type="../js/wow.min.js"></script>
   	<script>
   		new WOW().init();
   	</script>
 </head>
-<body class="contenedor">
-		<header class="encabezado" id="botonera">
-			<!-- inicia nav -->
-			<nav>
-				<ul class="botonera" style="height: 50px;">
-					<li><a href="../index.html"><img src="../assets/img/logo.png" alt="logo cine victoria"></a></li>
-					<li><a href="cartelera.html">Cartelera</a></li>
-					<li><a href="futurosestrenos.html">Futuros Estrenos</a></li>
-					<li><a href="boleteria.html">Boleteria</a></li>
-					<li><a href="preciopromo.html">Promociones</a></li>
-					<li><a href="#contacto">Contacto</a></li>
-					<li><a href="cuenta">Mi cuenta</a></li>
-				</ul>
-			</nav>
-			<!-- termina nav -->
-		</header>
-<!-- inicia contenido principal -->
-<main id="centro">
-			<h1 class="textCenter">Cine Teatro Victoria</h1>
-			<div class="carrusel"> 
-				<ul class="carruselFotos">
-					<li id="foto1"><img src="../assets/img/pelicula1.jpg" alt="Vertigo"></li>
-					<li id="foto2"><img src="../assets/img/pelicula2.jpg" alt="Fight Club"></li>
-					<li id="foto3"><img src="../assets/img/pelicula3.jpg" alt="Forgotten"></li>
-					<li id="foto4"><img src="../assets/img/estreno1.jpg" alt="Tenet"></li>
-					<li id="foto5"><img src="../assets/img/estreno2.jpg" alt="The House That Jack Built"></li>
-					<li id="foto6"><img src="../assets/img/estreno3.jpg" alt="Scream"></li>
-				</ul>
-				<ul class="carruselMenu">
-					<li><a href="#foto1"><img src="../assets/img/pelicula1.jpg" alt="Vertigo"></a></li>
-					<li><a href="#foto2"><img src="../assets/img/pelicula2.jpg" alt="Fight Club"></a></li>
-					<li><a href="#foto3"><img src="../assets/img/pelicula3.jpg" alt="Forgotten"></a></li>
-					<li><a href="#foto4"><img src="../assets/img/estreno1.jpg" alt="Tenet"></a></li>
-					<li><a href="#foto5"><img src="../assets/img/estreno2.jpg" alt="The House That Jack Built"></a></li>
-					<li><a href="#foto6"><img src="../assets/img/estreno3.jpg" alt="Scream"></a></li>
-				</ul>
-			</div>
-	</main>
-	<!-- cierra main -->
-<aside class="textCenter" id="aside">
-			<table class="nosotrosArticulos linear-gradient">
+<body>
+<!-- inicia nav -->
+  <nav class="navbar navbar-expand-md backNav" id="botonera">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../assets/img/logo.png" alt="logo cine" class="w-50"> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../views/cartelera.html">Cartelera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/futurosestrenos.html">Futuros Estrenos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mas opciones
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../views/boleteria.html">Boleteria</a></li>
+            <li><a class="dropdown-item" href="../views/preciopromo.html">Promociones</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+</nav>
+<!-- termina nav -->
+<h1 class="text-primary text-center">Cine Teatro Victoria</h1>
+<h3 class="text-primary text-center wow fadeInLeft" data-wow-iteration="10">No te pierdas las promos para disfrutar de tus películas favoritas</h3>
+<!-- empieza main -->
+<main class="row">
+<section class="col-xl-7 img-thumbnail" id="carrusel">
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/img/pelicula1.jpg" class="d-block w-100" alt="Vertigo">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/pelicula2.jpg" class="d-block w-100" alt="Fight Club">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/pelicula3.jpg" class="d-block w-100" alt="Forgotten">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/estreno1.jpg" class="d-block w-100" alt="Tenet">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/estreno2.jpg" class="d-block w-100" alt="The House That Jack Built">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/img/estreno3.jpg" class="d-block w-100" alt="Scream">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+<!-- empieza tabla -->
+<aside class="yp3 col-xl-5">
+			<table class="table table-hover linear-gradient">
 				<tr>
 					<th class="textoResaltar">Promos</th> 
 					<th class="textoResaltar">Dia</th>
@@ -73,28 +110,39 @@
 					<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quisquam saepe aspernatur nam at ipsum perspiciatis, debitis voluptates voluptate exercitationem nesciunt cum autem excepturi ipsa alias et tempore quam! Mollitia.</td>
 					<td>$x</td>
 				</tr>
-				<p class="textoResaltar wow fadeInLeft" data-wow-iteration="10">No te pierdas las promos para disfrutar de tus películas favoritas</p>
 			</table>
-			<a href="./boleteria.html">
-				<p class="textoResaltar transform">Clickea aquí o en la imágen de una película para ser redirigido hacia la boletería y reservá tu entrada</p>			
-				</a>
 </aside>
-	<footer class="textCenter" id="pie"> 
-		<article class="backFooter">
-		<h4>Seguinos en nuestras redes</h4> 
-		<a href="https://goo.gl/maps/EYf2qaEZzpHySpb16" target="_blank">
-			<img class="transform2" src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
-		</a>
-		<a href="https://facebook.com" target="_blank">
-			<img class="transform2" src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
-		</a>
-		<a href="https://twitter.com" target="_blank">
-			<img class="transform2" src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
-		</a>
-		<a href="https://instagram.com" target="_blank">
-			<img class="transform2" src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
-		</a>
-		</article>
-	</footer>
+<a href="./boleteria.html">
+				<h4 class="text-primary text-center transform">Clickea aquí o en la imágen de una película para ser redirigido hacia la boletería y reservá tu entrada</h4>			
+				</a>
+<!--cierra tabla-->
+</main>
+
+<!-- footer-->
+<footer class="text-center py3">
+  <article class="backFooter">
+    <h4 class="text-uppercase">Seguinos en nuestras redes</h4> 
+    <a href="https://goo.gl/maps/EYf2qaEZzpHySpb16" target="_blank">
+      <img class="transform" src="../assets/img/ubicacion.png" alt="ubicacion" height="80px" width="80px">
+    </a>
+    <a href="https://facebook.com" target="_blank">
+      <img class="transform" src="../assets/img/facebook.png" alt="seguinos en facebook" height="70px" width="70x">
+    </a>
+    <a href="https://twitter.com" target="_blank">
+      <img class="transform" src="../assets/img/twitter.png" alt="seguinos en twitter" height="70px" width="70px">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img class="transform" src="../assets/img/ig.png" alt="seguinos en instagram" height="65px" width="65px">
+    </a>
+    </article>
+</footer>
+<!-- cierra footer-->
+
+
+
+ 
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

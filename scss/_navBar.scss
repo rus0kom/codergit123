@@ -1,0 +1,35 @@
+nav{
+	img{
+		animation-name: shake;
+		animation-duration: 10s;
+		}
+	div{
+		ul{
+			li{
+				a{
+				background-image: linear-gradient(currentColor, currentColor);
+				background-position: 0% 100%;
+				background-repeat: no-repeat;
+				background-size: 0% 2px;
+				transition: background-size .3s;
+				font:$fontSecundary;
+				font-size:$textSm;
+				}
+				a:hover{
+					color:$primaryColor;
+					font-weight: 600;
+					background-size: 100% 2px;
+				}
+			}
+		}
+	}
+}
+
+.nav-link{
+color: white;
+}
+
+.dropdown-item{
+color: white;
+}
+

@@ -138,12 +138,11 @@ color: white;
 }
 
 #cartelera img{
-	width: 100px;
-	height: 100px;
+	width: 90%;
 }
 
 
-/* media queries */
+/* media queries 
 
  @media (min-width 280px) and (max-width 1203px){
 	#botonera img[src="assets/img/logo.png"]{
@@ -222,3 +221,5 @@ color: white;
 	width: 630px;
 	height: 630px;
 }
+
+*/

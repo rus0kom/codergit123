@@ -1,0 +1,45 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+//sizing
+$w-100:100%;
+$w-50:50%;
+$w-25:25%;
+
+@keyframes shake {
+	0%, 100% {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translateX(-10px);
+		-ms-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translateX(10px);
+		-ms-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+.linear-gradient{
+	background: rgb(111,115,149);
+	background: linear-gradient(90deg, rgba(111,115,149,1) 0%, rgba(79,81,92,1) 28%, rgba(212,232,235,1) 62%, rgba(122,125,145,1) 83%, rgba(71,75,99,1) 100%);
+}
+
+.transform:hover{
+	transform: translate(10px, 10px);
+	cursor: pointer;
+}
+
+.transform2:hover{
+	transform: translate(-5px, -5px);
+	cursor: pointer;
+}
+

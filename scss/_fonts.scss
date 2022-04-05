@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Great+Vibes&family=Montserrat:wght@100&family=Oswald:wght@200&family=Pacifico&family=Roboto:wght@300&display=swap');
+
+$fontMain:'Montserrat', sans-serif;
+$fontSecundary:'Tangerine', cursive;
+$primaryColor:#A1A3D0;
+
+// variable textos
+
+$textXl:4em;
+$textLg:3em;
+$textMd:2.4em;
+$textSm:1.5em;
+
+h1,
+h2,
+h3
+h4{
+	font-family: $fontMain;
+	margin: 10px 0;
+}
+
+h1{
+	font-size: $textXl;
+}
+
+h2{
+	font-size: $textLg;
+}
+
+h3{
+	font-size: $textMd;
+}
+h4{
+	font-size: $textSm;
+}

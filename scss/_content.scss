@@ -1,0 +1,44 @@
+section{
+	div{
+		div{
+			article{
+				height: auto;
+				margin: 20px auto;
+				border-style: double;
+				border-width: 5px;
+				border-color: #656565;	
+				padding: 20px 10px;
+				overflow-y: scroll;
+				max-height: 250px;
+			}
+		}
+	}
+}
+
+aside{
+	table{
+		font: $fontSecundary;
+		color: black;
+	}
+}
+
+section{
+	form{
+		font: $fontSecundary;
+		color: black;
+	}
+}
+
+#cartelera img{
+	width: 90%;
+}
+
+#formulario{
+	color: black;
+}
+
+body {
+	background-image: url(../assets/img/fondo.png);
+	background-size: cover;
+	height: 100vh;
+}

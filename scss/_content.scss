@@ -22,6 +22,14 @@ aside{
 	}
 }
 
+#carrusel{
+	img{
+		width: 75rem;
+  		height: 50rem;
+  		object-fit: fill;
+	}
+}
+
 section{
 	form{
 		font: $fontSecundary;

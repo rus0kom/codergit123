@@ -86,6 +86,11 @@ aside table {
   font: "Tangerine", cursive;
   color: black; }
 
+#carrusel img {
+  width: 75rem;
+  height: 50rem;
+  object-fit: fill; }
+
 section form {
   font: "Tangerine", cursive;
   color: black; }
@@ -117,3 +122,64 @@ footer {
 @media (min-width: 1024px) and (max-width: 1280px) {
   nav div ul li a {
     font-size: 1.2em; } }
+
+@media (min-width: 360px) and (max-width: 768px) {
+  #carrusel img {
+    width: 50rem;
+    height: 30rem;
+    object-fit: fill; } }
+
+@media screen and (min-width: 280px) {
+  #cartelera img {
+    width: 150px;
+    height: 200px; } }
+
+@media screen and (min-width: 305px) {
+  #cartelera img {
+    width: 175px;
+    height: 275px; } }
+
+@media screen and (min-width: 355px) {
+  #cartelera img {
+    width: 200px;
+    height: 300px; } }
+
+@media screen and (min-width: 405px) {
+  #cartelera img {
+    width: 275px;
+    height: 350px; } }
+
+@media screen and (min-width: 555px) {
+  #cartelera img {
+    width: 300px;
+    height: 375px; } }
+
+@media screen and (min-width: 605px) {
+  #cartelera img {
+    width: 350px;
+    height: 400px; } }
+
+@media screen and (min-width: 705px) {
+  #cartelera img {
+    width: 400px;
+    height: 450px; } }
+
+@media screen and (min-width: 805px) {
+  #cartelera img {
+    width: 470px;
+    height: 500px; } }
+
+@media screen and (min-width: 945px) {
+  #cartelera img {
+    width: 500px;
+    height: 500px; } }
+
+@media screen and (min-width: 1005px) {
+  #cartelera img {
+    width: 600px;
+    height: 600px; } }
+
+@media screen and (min-width: 1205px) {
+  #cartelera img {
+    width: 625px;
+    height: 625px; } }

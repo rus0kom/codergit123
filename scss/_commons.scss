@@ -43,3 +43,18 @@ $w-25:25%;
 	cursor: pointer;
 }
 
+
+
+
+
+//mixin 
+@mixin texto($font-size, $line-height, $color){
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+}
+
+.texto{
+	@include texto(1em,1.4em,black)
+}
+ 

@@ -50,3 +50,19 @@ body {
 	background-size: cover;
 	height: 100vh;
 }
+
+body aside section{
+	background-image: url(../assets/img/notfound.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+.container404{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}

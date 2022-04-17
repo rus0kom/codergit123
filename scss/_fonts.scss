@@ -11,25 +11,26 @@ $textLg:3em;
 $textMd:2.4em;
 $textSm:1.5em;
 
-h1,
-h2,
-h3
-h4{
-	font-family: $fontMain;
-	margin: 10px 0;
-}
+//map
+
+$tamaño: (
+	'uno':$fontMain,
+	'dos':$textLg,
+	'tres':$textMd,
+	'cuatro':$textSm);
 
 h1{
-	font-size: $textXl;
+	font-size: map-get($map:$tamaño,$key:'uno');
 }
 
 h2{
-	font-size: $textLg;
+	font-size: map-get($map:$tamaño,$key:'dos');
 }
 
 h3{
-	font-size: $textMd;
+	font-size: map-get($map:$tamaño,$key:'tres');
 }
+
 h4{
-	font-size: $textSm;
+	font-size: map-get($map:$tamaño,$key:'cuatro');
 }
